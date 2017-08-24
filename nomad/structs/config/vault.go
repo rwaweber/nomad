@@ -173,10 +173,6 @@ func (c *VaultConfig) ApiConfig() (*vault.Config, error) {
 
 // Copy returns a copy of this Vault config.
 func (c *VaultConfig) Copy() *VaultConfig {
-	if c == nil {
-		return nil
-	}
-
 	nc := new(VaultConfig)
 	*nc = *c
 	return nc
